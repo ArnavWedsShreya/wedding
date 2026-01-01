@@ -36,7 +36,8 @@
             position: relative;
             overflow: hidden;
         }
-
+        <div class="hero-bg-blur"></div>
+      
         .hero-bg {
             position: fixed;
             top: 0;
@@ -47,6 +48,19 @@
             z-index: 1;
             transition: all 0.1s ease-out;
         }
+        /* Blurred background behind welcome */
+.hero-bg-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url('hero-image.jpg') center/cover no-repeat;
+    filter: blur(12px) brightness(0.7);
+    transform: scale(1.1);
+    z-index: 0;
+}
+
         /* Scroll indicator */
 .scroll-indicator {
     position: fixed;
