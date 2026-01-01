@@ -36,8 +36,6 @@
             position: relative;
             overflow: hidden;
         }
-        <div class="hero-bg-blur"></div>
-      
         .hero-bg {
             position: fixed;
             top: 0;
@@ -825,134 +823,66 @@
         }
 
         /* Mobile Responsiveness */
-        @media (max-width: 768px)
-        /* Mobile heading enhancement */
-.section-title {
-    position: relative;
-    padding-bottom: 12px;
-}
+        @media (max-width: 768px) {
 
-.section-title::after {
-    content: '';
-    display: block;
-    width: 80px;
-    height: 2px;
-    background: var(--gold);
-    margin: 10px auto 0;
-}
-{
-            .ganesh-text {
-                font-size: 14px;
-                letter-spacing: 1px;
-            }
+    /* Mobile heading enhancement */
+    .section-title {
+        position: relative;
+        padding-bottom: 12px;
+    }
 
-            .ganesh-img {
-                width: 30px;
-                height: 30px;
-            }
+    .section-title::after {
+        content: '';
+        display: block;
+        width: 80px;
+        height: 2px;
+        background: var(--gold);
+        margin: 10px auto 0;
+    }
 
-            .welcome-text {
-                font-size: 36px;
-            }
+    .ganesh-text {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
 
-            .couple-names-welcome {
-                font-size: 32px;
-            }
+    .ganesh-img {
+        width: 30px;
+        height: 30px;
+    }
 
-            .wedding-date-location {
-                font-size: 16px;
-            }
+    .welcome-text {
+        font-size: 36px;
+    }
 
-            .welcome-box {
-                padding: 30px 25px;
-            }
+    .couple-names-welcome {
+        font-size: 32px;
+    }
 
-            .section-title {
-                font-size: 28px;
-            }
+    .wedding-date-location {
+        font-size: 16px;
+    }
 
-            .section-title-hindi {
-                font-size: 26px;
-            }
+    .welcome-box {
+        padding: 30px 25px;
+    }
 
-            .section-title::before,
-            .section-title::after {
-                display: none;
-            }
+    .section-title {
+        font-size: 28px;
+    }
 
-            .couple-container {
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
+    .section-title::before,
+    .section-title::after {
+        display: none;
+    }
 
-            .person-photo {
-                width: 200px;
-                height: 200px;
-            }
+    .person-name {
+        font-size: 38px;
+    }
 
-            .person-title {
-                font-size: 24px;
-            }
-
-            .person-name {
-                font-size: 38px;
-            }
-
-            .parent-name {
-                font-size: 18px;
-            }
-
-            .countdown-item {
-                padding: 20px 25px;
-                min-width: 100px;
-            }
-
-            .countdown-number {
-                font-size: 36px;
-            }
-
-            .function-name {
-                font-size: 32px;
-            }
-
-            .function-date {
-                font-size: 22px;
-            }
-
-            .function-time {
-                font-size: 18px;
-            }
-
-            .blessings-content,
-            .story-content {
-                padding: 40px 30px;
-            }
-
-            .blessings-title,
-            .story-title {
-                font-size: 32px;
-            }
-
-            .blessings-title-hindi,
-            .story-title-hindi {
-                font-size: 28px;
-            }
-
-            .blessings-text,
-            .story-text {
-                font-size: 18px;
-                line-height: 1.8;
-            }
-
-            .blessings-invite {
-                font-size: 20px;
-            }
-
-            .phone-numbers {
-                flex-direction: column;
-                gap: 20px;
-            }
-
+    .phone-numbers {
+        flex-direction: column;
+        gap: 20px;
+    }
             .venue-container {
                 grid-template-columns: 1fr;
                 gap: 30px;
@@ -988,7 +918,8 @@
 
     <!-- Hero Section with Parallax Background -->
     <section class="hero-section">
-        <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-bg-blur"></div>
+    <div class="hero-bg" id="heroBg"></div>
         
         <!-- Welcome Message - Appears on Scroll -->
         <div class="welcome-message" id="welcomeMessage">
