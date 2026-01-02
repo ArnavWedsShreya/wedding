@@ -67,23 +67,30 @@
     transform: translateX(-50%);
     z-index: 20;
     pointer-events: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     animation: bounce 1.8s infinite;
     text-align: center;
 }
 
-.scroll-arrow {
-    font-size: 48px;
-    color: var(--gold);
-    display: inline-block;
-    opacity: 0.9;
-}
- .scroll-text {
+.scroll-text {
     font-family: 'Cinzel', serif;
     font-size: 14px;
     letter-spacing: 3px;
     text-transform: uppercase;
     color: var(--gold);
-    margin-bottom: 6px;
+    margin-bottom: 4px;
+    line-height: 1;
+}
+
+.scroll-arrow {
+    font-size: 52px;
+    line-height: 1;
+    color: var(--gold);
+    display: block;
 }
 /* Soft glow for scroll indicator */
 .scroll-text,
@@ -848,18 +855,23 @@
         @media (max-width: 768px) {
             /* Fix welcome box cut-off on mobile */
 .welcome-message {
-    top: 55%;
+    top: 56%;
+    transform: translate(-50%, -50%);
 }
 
 .welcome-text {
     font-size: clamp(18px, 4vw, 22px);
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 .welcome-box {
-    padding: 25px 20px;
-    max-height: 90vh;
+    padding: 20px 18px;
+    max-height: 88vh;
     overflow-y: auto;
+}
+            /* Reduce ALL text inside welcome box */
+.welcome-box * {
+    font-size: 85%;
 }
 
     /* Mobile heading enhancement */
@@ -892,11 +904,12 @@
     }
 
     .couple-names-welcome {
-        font-size: 32px;
+        font-size: 26px;
+    letter-spacing: 2px;
     }
 
     .wedding-date-location {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .welcome-box {
